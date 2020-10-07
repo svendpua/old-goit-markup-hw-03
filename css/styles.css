@@ -1,0 +1,276 @@
+/*  белый primary-white-color: #ffffff;*/
+/* --Цвет основного текста title-text-color #212121*/
+/* primary-text-color #757575*/
+/*accent-color #2196f3*/
+/*цвета ШАПКИ:
+логотип #000000;#2196F3
+навигация на др. страницы #212121 #2196F3*/
+/*цвет фона секции "Эффект. решения": #2F303A*/
+/* цвет фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA*/
+/*secondary-text-color*/
+
+:root {
+   --main-font: "Roboto",sans-serif;
+   --logo-font: "Raleway",sans-serif;
+   --primary-text-color: #757575;
+   --title-text-color: #212121;
+   --accent-color: #2196f3;
+   --primary-white-color: #ffffff;
+   --background-dark-theme: #2F303A;
+}
+
+.body-page {
+    font-family: var(--main-font);
+    font-style: normal;
+    background-color:#E5E5E5;
+    /*color: var(--primary-text-color);*/
+}
+
+.list {
+    list-style: none;
+  }
+  
+.link {
+    text-decoration: none;
+  }
+
+.address {
+    font-style: normal;
+}
+
+/*  ============ COMPONENTS  ============ */
+.modal-btn {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.subtitle {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+
+.title {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    }
+/*  ============ END COMPONENTS  ============ */
+
+
+/*  ============ HEADER  ============ */
+
+.logo-web,
+.logo-studio {
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+
+ .logo-web {
+    color: var(--accent-color);
+ }
+
+.logo-studio {
+    color: var(--title-text-color);
+ }
+
+
+.header {
+    background-color: var(--primary-white-color);
+    color: var(--title-text-color);
+}
+/* Navigation on other pages */
+.site-nav-link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.auth-nav-link:hover,
+.auth-nav-link:focus,
+.current {
+    color: var(--accent-color);
+}
+.auth-nav-link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.auth-nav-link .current {
+    color: var(--accent-color);
+}
+
+/*  ============ END HEADER  ============ */
+
+/*  ============ HERO ==> SOLUTIONS ============ */
+
+.solutions {
+ background-color: var(--background-dark-theme);
+}
+
+.solutions-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+}
+
+/*  ============ END HERO ==> END SOLUTIONS ============ */
+
+/*  ============ OUR ADVANTAGES ============*/
+
+.advantages-list-subtitle {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.advantages-list-text {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/*  ============END OUR ADVANTAGES ============*/
+
+/*  ============ OUR TEAM  ============ */
+.team {
+    background: #F5F4FA;
+}
+
+.team-list-subtitle {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19x;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team-list-text {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);  
+}
+
+/*  ============ OUR WORKS  ============ */
+.filter-btn {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color:#F5F4FA;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.works-subtitle {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.works-text {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+/*  ============ END OUR WORKS  ============ */
+/*  ============ FOOTER  ============ */
+.footer {
+  background-color: var(--background-dark-theme); 
+}
+
+.logo-studio-light-theme {
+    color: var(--primary-white-color);
+}
+
+.footer-auth-nav-link-map {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+ }
+
+ .footer-auth-nav-link {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+ }
+
+ .footer-auth-nav-link-map:hover,
+ .footer-auth-nav-link-map:focus,
+ .footer-auth-nav-link:hover,
+ .footer-auth-nav-link:focus {
+    color: var(--accent-color);  
+ }
+/*  ============ END FOOTER  ============ */
+
+/*Панель кнопок меню фильтра Наши работы*/
+
+.button:hover {
+    font-family: inherit;
+}
+
