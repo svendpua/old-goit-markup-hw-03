@@ -20,6 +20,13 @@
    --background-dark-theme: #2F303A;
 }
 
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
 .body-page {
     font-family: var(--main-font);
     font-style: normal;
@@ -28,6 +35,8 @@
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
   }
   
@@ -39,8 +48,27 @@
     font-style: normal;
 }
 
+.section {
+    padding: 94px 0;
+  }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* outline: 2px solid tomato;*/
+  }
+  
+ .img {
+      display:block;
+  }
 /*  ============ COMPONENTS  ============ */
 .modal-btn {
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
@@ -53,6 +81,7 @@
 }
 
 .subtitle {
+    margin-bottom: 50px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
@@ -63,6 +92,7 @@
   }
 
 .title {
+    margin-bottom: 50px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
@@ -71,13 +101,10 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     }
-/*  ============ END COMPONENTS  ============ */
-
-
-/*  ============ HEADER  ============ */
 
 .logo-web,
 .logo-studio {
+    display: inline-block;
     font-family: var(--logo-font);
     font-style: normal;
     font-weight: 700;
@@ -87,11 +114,21 @@
   }
 
  .logo-web {
+    display: block;
     color: var(--accent-color);
  }
 
-.logo-studio {
+ .logo-studio {
     color: var(--title-text-color);
+ }
+
+/*  ============ END COMPONENTS  ============ */
+
+
+/*  ============ HEADER  ============ */
+ .header .logo-web {
+     padding-top: 24px;
+     padding-bottom: 25px;
  }
 
 
@@ -99,8 +136,31 @@
     background-color: var(--primary-white-color);
     color: var(--title-text-color);
 }
+
+.portfolio-page {
+    border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+display: flex;
+justify-content: space-between;
+}
 /* Navigation on other pages */
+.nav {
+    display: flex;
+    align-items: center;
+}
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav-item:not(:last-child) {
+margin-right: 50px;
+}
 .site-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
@@ -116,7 +176,19 @@
 .current {
     color: var(--accent-color);
 }
+
+.auth-nav {
+display: flex;
+align-items: center;
+}
+
+.auth-nav-phone {
+margin-left: 50px;
+}
 .auth-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
@@ -134,10 +206,19 @@
 /*  ============ HERO ==> SOLUTIONS ============ */
 
 .solutions {
+    padding-top: 200px;
+    padding-bottom: 200px;
  background-color: var(--background-dark-theme);
 }
 
+.solutions-content {
+max-width: 700px ;
+margin: 0 auto;
+text-align: center;
+}
+
 .solutions-title {
+    margin-bottom: 30px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -151,7 +232,24 @@ color: var(--primary-white-color);
 
 /*  ============ OUR ADVANTAGES ============*/
 
+.advantages {
+    padding-top: 94px;
+}
+
+.advantages-list {
+    display: flex;
+}
+
+.advantages-list-item {
+    width: 270px;
+}
+
+.advantages-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .advantages-list-subtitle {
+    margin-bottom: 10px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -172,12 +270,43 @@ color: var(--primary-white-color);
 
 /*  ============END OUR ADVANTAGES ============*/
 
+/*  ============ ABOUT US  ============ */
+.about-us-list {
+    display: flex;
+}
+
+.about-us-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*  ============ END ABOUT US  ============ */
+
 /*  ============ OUR TEAM  ============ */
 .team {
     background: #F5F4FA;
 }
 
+.team-list {
+    display: flex;
+}
+
+.team-list-item {
+    box-shadow: rgba(0, 0, 0, 0.14),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list-description {
+    padding: 30px 20px;
+}
+
 .team-list-subtitle {
+    margin-bottom: 10px;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
@@ -196,9 +325,24 @@ color: var(--primary-white-color);
     letter-spacing: 0.03em;
     color: var(--primary-text-color);  
 }
-
+/*  ============ END OUR TEAM  ============ */
 /*  ============ OUR WORKS  ============ */
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.filter-list-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter-btn {
+    display: inline-block;
+    min-width: 128px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
@@ -215,7 +359,28 @@ color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+..works-list-item:not(:nth-child(n+4)) {
+    margin-bottom: 30px;
+}
+
+.works-description {
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left:  1px solid #eeeeee;
+}
+
 .works-subtitle {
+    margin-bottom: 4px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 18px;
@@ -235,9 +400,18 @@ color: var(--primary-white-color);
 /*  ============ END OUR WORKS  ============ */
 /*  ============ FOOTER  ============ */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
   background-color: var(--background-dark-theme); 
 }
 
+.address {
+    margin-top: 20px;
+}
+
+.footer-auth-nav-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 .logo-studio-light-theme {
     color: var(--primary-white-color);
 }
